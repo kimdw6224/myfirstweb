@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>to-do</title>
+</head>
+<body>
+
+
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <h4>
+  <script>
+    date = new Date().toLocaleDateString();
+    document.write(date);
+  </script>
+  </h4>
+  <input type="text" id="myInput" placeholder="할 일" style="padding : 12px">
+  <span onclick="newElement()" class="addBtn" style="padding-bottom : 11px">추가</span>
+</div>
+
+<ul id="myUL">
+  <li>내용 저장하기</li>
+</ul>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
